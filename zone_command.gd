@@ -4,7 +4,7 @@ extends Node2D
 @onready var point_mesh = $MeshInstance2D
 
 func _unhandled_input(event: InputEvent) -> void:
-	if Input.is_action_just_pressed("Left"):
+	if Input.is_action_just_pressed("Left_Mouse"):
 		var click_pos = get_local_mouse_position()
 			
 		if my_polygon.polygon.size() >= 3:
