@@ -1,2 +1,1 @@
-# edgeyRTS
- edgeyRTS made in Redot
+# SlavTropic
