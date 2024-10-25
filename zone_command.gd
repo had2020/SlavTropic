@@ -11,4 +11,5 @@ func _process(delta: float) -> void:
 	pass
 
 func _unhandled_input(event: InputEvent) -> void:
-	if
+	if Input.is_action_just_pressed("Left"):
+		print("ftnjj")
