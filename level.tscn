@@ -1,16 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://calxug1xhvlut"]
+[gd_scene load_steps=5 format=3 uid="uid://calxug1xhvlut"]
 
 [ext_resource type="Script" path="res://player_controls.gd" id="1_3qojn"]
-[ext_resource type="Texture2D" uid="uid://cdupd5bp2cf6b" path="res://Red.png" id="2_nf7eo"]
 [ext_resource type="PackedScene" uid="uid://nf4auaa2hmag" path="res://npc.tscn" id="3_6dcq2"]
 [ext_resource type="Script" path="res://zone_command.gd" id="3_w8g7a"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b1lav"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_am045"]
-
-[sub_resource type="PointMesh" id="PointMesh_aocre"]
-material = SubResource("StandardMaterial3D_am045")
 
 [node name="Level" type="Node2D"]
 
@@ -26,9 +20,9 @@ script = ExtResource("3_w8g7a")
 material = SubResource("CanvasItemMaterial_b1lav")
 polygon = PackedVector2Array(5, 5, 5, 0, 0, 0, 0, 5)
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="zone_command"]
-mesh = SubResource("PointMesh_aocre")
-texture = ExtResource("2_nf7eo")
+[node name="Polygon2D" type="Polygon2D" parent="zone_command"]
+color = Color(0.0823529, 0.427451, 0, 1)
+polygon = PackedVector2Array(0, 0, 5, 0, 5, 5, 0, 5)
 
 [node name="Npc" parent="." instance=ExtResource("3_6dcq2")]
 position = Vector2(48, -39)
