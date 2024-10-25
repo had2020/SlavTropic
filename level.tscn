@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://calxug1xhvlut"]
+[gd_scene load_steps=4 format=3 uid="uid://calxug1xhvlut"]
 
 [ext_resource type="Texture2D" uid="uid://cdupd5bp2cf6b" path="res://Red.png" id="2_nf7eo"]
+[ext_resource type="PackedScene" uid="uid://nf4auaa2hmag" path="res://npc.tscn" id="3_6dcq2"]
 [ext_resource type="Script" path="res://zone_command.gd" id="3_w8g7a"]
 
 [node name="Level" type="Node2D"]
@@ -15,3 +16,6 @@ texture = ExtResource("2_nf7eo")
 
 [node name="zone_command" type="Node2D" parent="."]
 script = ExtResource("3_w8g7a")
+
+[node name="Npc" parent="." instance=ExtResource("3_6dcq2")]
+position = Vector2(48, -39)
