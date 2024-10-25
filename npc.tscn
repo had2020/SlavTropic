@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://nf4auaa2hmag"]
+
+[ext_resource type="Texture2D" uid="uid://bkdp7ty44x87i" path="res://icon.svg" id="1_kqskk"]
+
+[node name="Npc" type="CharacterBody2D"]
+
+[node name="Avatar" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_kqskk")
+
+[node name="Label" type="Label" parent="Avatar"]
+z_index = 2
+offset_left = -36.6667
+offset_top = 66.6667
+offset_right = 38.3333
+offset_bottom = 89.6667
+text = "Slavic Bro"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Avatar"]
+modulate = Color(1, 0, 0, 1)
+offset_left = -40.0
+offset_top = 66.6667
+offset_right = -36.0
+offset_bottom = 93.6667
+scale = Vector2(19.6667, 1)
+fill_mode = 1
+show_percentage = false
+metadata/_edit_use_anchors_ = true
