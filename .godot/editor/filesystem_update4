@@ -1,3 +1,5 @@
-res://npc.tscn
 res://level.tscn
 res://zone_command.gd
+res://npc.tscn
+res://player_controls.gd
+res://npc.gd

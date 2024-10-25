@@ -1,2 +1,6 @@
+MeshInstance2D
+MultiMeshInstance2D
+CollisionPolygon2D
+Area2D
 Node2D
 CollisionShape2D
