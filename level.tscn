@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://calxug1xhvlut"]
+[gd_scene load_steps=6 format=3 uid="uid://calxug1xhvlut"]
 
 [ext_resource type="Script" path="res://player_controls.gd" id="1_3qojn"]
+[ext_resource type="Script" path="res://units/Controll manager.gd" id="2_5u1xl"]
 [ext_resource type="PackedScene" uid="uid://nf4auaa2hmag" path="res://npc.tscn" id="3_6dcq2"]
-[ext_resource type="Script" path="res://zone_command.gd" id="3_w8g7a"]
+[ext_resource type="PackedScene" uid="uid://b0s380jr7gqu8" path="res://units/unit_basic.tscn" id="4_5jgls"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b1lav"]
 
@@ -12,7 +13,7 @@
 script = ExtResource("1_3qojn")
 
 [node name="zone_command" type="Node2D" parent="."]
-script = ExtResource("3_w8g7a")
+script = ExtResource("2_5u1xl")
 
 [node name="Area2D" type="Area2D" parent="zone_command"]
 
@@ -26,3 +27,16 @@ polygon = PackedVector2Array(0, 0, 5, 0, 5, 5, 0, 5)
 
 [node name="Npc" parent="." instance=ExtResource("3_6dcq2")]
 position = Vector2(48, -39)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(1, 1, 1, 0.54902)
+
+[node name="Selection_area" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selection_area"]
+
+[node name="Unit-Basic" parent="Selection_area" instance=ExtResource("4_5jgls")]
+position = Vector2(-76, -46)
+
+[node name="Unit-Basic2" parent="Selection_area" instance=ExtResource("4_5jgls")]
+position = Vector2(-162, -87)

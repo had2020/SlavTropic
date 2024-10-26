@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0s380jr7gqu8"]
+
+[ext_resource type="Script" path="res://units/unit_basic.gd" id="1_ek31g"]
+[ext_resource type="Texture2D" uid="uid://bkdp7ty44x87i" path="res://icon.svg" id="2_vvqtu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ng3mk"]
+size = Vector2(50, 96)
+
+[sub_resource type="Gradient" id="Gradient_qv26c"]
+colors = PackedColorArray(0, 0.286275, 0, 0.337255, 0, 1, 0, 0.0470588)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mq3n6"]
+gradient = SubResource("Gradient_qv26c")
+
+[node name="Unit-Basic" type="CharacterBody2D" groups=["units"]]
+script = ExtResource("1_ek31g")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+target_desired_distance = 30.0
+
+[node name="Area2D" type="Area2D" parent="." groups=["unit"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_ng3mk")
+
+[node name="Unit image" type="Sprite2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(-2, 0)
+scale = Vector2(0.4375, 0.78125)
+texture = ExtResource("2_vvqtu")
+
+[node name="Box" type="Sprite2D" parent="Area2D"]
+visible = false
+position = Vector2(-2, -5.68434e-14)
+scale = Vector2(0.867364, 1.55526)
+texture = SubResource("GradientTexture2D_mq3n6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_ng3mk")
+
+[connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]

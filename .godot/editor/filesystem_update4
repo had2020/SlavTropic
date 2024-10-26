@@ -1,3 +1,5 @@
+res://units/unit_basic.tscn
 res://level.tscn
+res://units/Controll manager.gd
 res://npc.tscn
-res://zone_command.gd
+res://player_controls.gd

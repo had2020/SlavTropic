@@ -23,6 +23,10 @@ func _input(event):
 			self.zoom = self.zoom * zooming_speed
 		elif event.delta.y < 0:
 			self.zoom = self.zoom / -zooming_speed
+	elif event.is_action("wheel_down"):
+		self.zoom = self.zoom * zooming_speed
+	elif event.is_action("wheel_up"):
+		self.zoom = self.zoom / -zooming_speed
 	elif event.is_action("esc"):
 			#get_tree().reload_current_scene() #reset
 			get_tree().quit() #quit

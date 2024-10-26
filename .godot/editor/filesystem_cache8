@@ -1,10 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729888657
-icon.svg::CompressedTexture2D::3095471190008340852::1729797606::1729875030::1::::<><>::
-level.tscn::PackedScene::4796982085752809823::1729888146::0::1::::<><>::res://player_controls.gd<>uid://nf4auaa2hmag::::res://npc.tscn<>res://zone_command.gd
-npc.gd::GDScript::-1::1729877827::0::1::::<>CharacterBody2D<>::
-npc.tscn::PackedScene::924538699358320286::1729887867::0::1::::<><>::res://npc.gd<>uid://bkdp7ty44x87i::::res://icon.svg
-player_controls.gd::GDScript::-1::1729887350::0::1::::<>Camera2D<>::
-README.md::TextFile::-1::1729874848::0::1::::<><>::
-Red.png::CompressedTexture2D::5025613143617713043::1729805283::1729875030::1::::<><>::
-zone_command.gd::GDScript::-1::1729887866::0::1::::<>Node2D<>::
+::res://::1729905719
+icon.svg::CompressedTexture2D::3095471190008340852::1729829191::1729905720::1::::<><>::
+level.tscn::PackedScene::4796982085752809823::1729905296::0::1::::<><>::res://player_controls.gd<>uid://nf4auaa2hmag::::res://npc.tscn<>res://zone_command.gd
+npc.gd::GDScript::-1::1729905296::0::1::::<>CharacterBody2D<>::
+npc.tscn::PackedScene::924538699358320286::1729830790::0::1::::<><>::res://npc.gd<>uid://bkdp7ty44x87i::::res://icon.svg
+player_controls.gd::GDScript::-1::1729905296::0::1::::<>Camera2D<>::
+README.md::TextFile::-1::1729905296::0::1::::<><>::
+Red.png::CompressedTexture2D::5025613143617713043::1729829191::1729905720::1::::<><>::
+zone_command.gd::GDScript::-1::1729905296::0::1::::<>Node2D<>::
+::res://units/::1729905220
+Controll manager.gd::GDScript::-1::1707260615::0::1::::<>Node2D<>::
+unit_basic.gd::GDScript::-1::1707509659::0::1::::<>CharacterBody2D<>::
+unit_basic.tscn::PackedScene::4180060909015722521::1729905220::0::1::::<><>::res://code/unit_basic.gd<>uid://28bc32n3kfl::::res://icon.svg
