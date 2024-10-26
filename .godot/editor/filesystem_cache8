@@ -1,25 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< Updated upstream
-::res://::1729905719
-icon.svg::CompressedTexture2D::3095471190008340852::1729829191::1729905720::1::::<><>::
-level.tscn::PackedScene::4796982085752809823::1729905296::0::1::::<><>::res://player_controls.gd<>uid://nf4auaa2hmag::::res://npc.tscn<>res://zone_command.gd
+::res://::1729924542
+icon.svg::CompressedTexture2D::3095471190008340852::1729829191::1729924542::1::::<><>::
+level.tscn::PackedScene::4796982085752809823::1729906810::0::1::::<><>::res://player_controls.gd<>res://units/Controll manager.gd<>uid://nf4auaa2hmag::::res://npc.tscn<>uid://b0s380jr7gqu8::::res://units/unit_basic.tscn
 npc.gd::GDScript::-1::1729905296::0::1::::<>CharacterBody2D<>::
-npc.tscn::PackedScene::924538699358320286::1729830790::0::1::::<><>::res://npc.gd<>uid://bkdp7ty44x87i::::res://icon.svg
-player_controls.gd::GDScript::-1::1729905296::0::1::::<>Camera2D<>::
+npc.tscn::PackedScene::924538699358320286::1729906759::0::1::::<><>::res://npc.gd<>uid://bkdp7ty44x87i::::res://icon.svg
+player_controls.gd::GDScript::-1::1729906757::0::1::::<>Camera2D<>::
 README.md::TextFile::-1::1729905296::0::1::::<><>::
-Red.png::CompressedTexture2D::5025613143617713043::1729829191::1729905720::1::::<><>::
+Red.png::CompressedTexture2D::5025613143617713043::1729829191::1729924542::1::::<><>::
 zone_command.gd::GDScript::-1::1729905296::0::1::::<>Node2D<>::
-::res://units/::1729905220
-Controll manager.gd::GDScript::-1::1707260615::0::1::::<>Node2D<>::
+::res://units/::1729906759
+Controll manager.gd::GDScript::-1::1729906011::0::1::::<>Node2D<>::
 unit_basic.gd::GDScript::-1::1707509659::0::1::::<>CharacterBody2D<>::
-unit_basic.tscn::PackedScene::4180060909015722521::1729905220::0::1::::<><>::res://code/unit_basic.gd<>uid://28bc32n3kfl::::res://icon.svg
-=======
-::res://::1729834874
-icon.svg::CompressedTexture2D::3095471190008340852::1729829191::1729829392::1::::<><>::
-level.tscn::PackedScene::4796982085752809823::1729830790::0::1::::<><>::uid://cdupd5bp2cf6b::::res://Red.png<>uid://nf4auaa2hmag::::res://npc.tscn<>res://zone_command.gd
-npc.gd::GDScript::-1::1729830728::0::1::::<>CharacterBody2D<>::
-npc.tscn::PackedScene::924538699358320286::1729830790::0::1::::<><>::res://npc.gd<>uid://bkdp7ty44x87i::::res://icon.svg
-README.md::TextFile::-1::1729829191::0::1::::<><>::
-Red.png::CompressedTexture2D::5025613143617713043::1729829191::1729829392::1::::<><>::
-zone_command.gd::GDScript::-1::1729830785::0::1::::<>Node2D<>::
->>>>>>> Stashed changes
+unit_basic.tscn::PackedScene::4180060909015722521::1729906759::0::1::::<><>::res://units/unit_basic.gd<>uid://bkdp7ty44x87i::::res://icon.svg

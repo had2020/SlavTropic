@@ -1,7 +1,9 @@
+CollisionShape2D
+NavigationRegion2D
+NavigationAgent2D
 CollisionPolygon2D
 Area2D
 Polygon2D
 MeshInstance2D
 MultiMeshInstance2D
 Node2D
-CollisionShape2D

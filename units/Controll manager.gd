@@ -51,11 +51,11 @@ func _physics_process(delta):
 func get_middle():
 	var top_right = Vector2(point_2.x, point_1.y)
 	var bottom_left = Vector2(point_1.x, point_2.y)
-	$"../selection area/CollisionPolygon2D".polygon = [point_1, top_right, point_2, bottom_left] # setting polygon array of points
+	$"../Selection_area/CollisionPolygon2D".polygon = [point_1, top_right, point_2, bottom_left] # setting polygon array of points
 	$"../Polygon2D".polygon = [point_1, top_right, point_2, bottom_left] # setting polygon array of points
 	for node in units_selected:
 		node.get_parent().selected()
 
-func _on_area_2d_area_entered(area):
+func _on_selection_area_area_entered(area: Area2D) -> void:
 	if area.is_in_group("unit") and point_1_made == true:
 		units_selected.append(area)

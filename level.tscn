@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://calxug1xhvlut"]
+[gd_scene load_steps=7 format=3 uid="uid://calxug1xhvlut"]
 
 [ext_resource type="Script" path="res://player_controls.gd" id="1_3qojn"]
 [ext_resource type="Script" path="res://units/Controll manager.gd" id="2_5u1xl"]
@@ -6,6 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://b0s380jr7gqu8" path="res://units/unit_basic.tscn" id="4_5jgls"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b1lav"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_iq3ow"]
+vertices = PackedVector2Array(564.008, -309.008, 564.977, 315.969, -562.094, 313.023, -567.898, -310.977)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-572, 323, -578, -321, 574, -319, 575, 326)])
 
 [node name="Level" type="Node2D"]
 
@@ -40,3 +45,8 @@ position = Vector2(-76, -46)
 
 [node name="Unit-Basic2" parent="Selection_area" instance=ExtResource("4_5jgls")]
 position = Vector2(-162, -87)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_iq3ow")
+
+[connection signal="area_entered" from="Selection_area" to="zone_command" method="_on_selection_area_area_entered"]
